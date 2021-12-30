@@ -12,21 +12,35 @@ body {
   padding: 30px;
   width: 375px;
   align-content: center;
+  margin-top: 80px;
 }
 
 /* equal image */
+.view {
+  display: none;
+  position: relative;
+  top: 210px;
+  left: 166px;
+}
+
+.view:hover {
+  display: block;
+  position: relative;
+  top: 210px;
+  left: 166px;
+}
 
 .equal_image {
   max-width: 100%;
-  height: auto;
   border-radius: 3% / 3%;
+  padding: 0px;
 }
 
 .equal_image:hover {
-  content: '<svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>';
   max-width: 100%;
   height: auto;
   border-radius: 3% / 3%;
+  filter: hue-rotate(315deg) brightness(2.1);
 }
 
 h2 {
@@ -39,6 +53,7 @@ h2:hover {
 
 h3 {
   color: hsl(215, 32%, 57%);
+  font-weight: 400;
 }
 
 .flex-container {
@@ -77,6 +92,7 @@ h5 {
   margin: 25px 10px;
   font-size: 18px;
   color: hsl(215, 32%, 57%);
+  font-weight: 400;
 }
 
 .blue-text {
